@@ -12,6 +12,7 @@ import image8 from '../../assets/slider/VAS_1137_result.jpg'
 import image9 from '../../assets/slider/VAS_1245_result.jpg'
 import image10 from '../../assets/slider/VAS_7250_result.jpg'
 import {Slaider} from "../slider";
+import {Menu} from "../menu";
 
 export const MainPage = () => {
     const content = 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
@@ -19,6 +20,7 @@ export const MainPage = () => {
     const imageArray = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10]
     return (
         <div className='w-full h-full'>
+            <Menu />
             <ArticlePage
                 image2={secondImage}
                 image={firstImage}
